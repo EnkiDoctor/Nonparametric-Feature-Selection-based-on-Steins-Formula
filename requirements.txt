@@ -1,0 +1,22 @@
+# Core scientific computing libraries
+numpy>=1.19.0
+scipy>=1.5.0
+
+# Deep learning framework
+# Note: PyTorch 2.7+ removed verbose parameter from ReduceLROnPlateau
+# Use version 2.6 or earlier to maintain compatibility
+torch>=1.8.0,<2.7.0
+
+# Machine learning utilities
+scikit-learn>=0.24.0
+
+# Feature selection methods
+lassonet
+
+# Progress bars
+tqdm>=4.60.0
+
+# Visualization libraries
+matplotlib>=3.3.0
+seaborn>=0.11.0
+

@@ -1,0 +1,29 @@
+% Detailed sample size time comparison results table (with standard deviation)
+% Experiment parameters: d=200, k=5, s=5, test_samples=500
+
+\begin{table}[htbp]
+\centering
+\caption{Detailed Running Time Comparison of Variable Selection Methods for Different Sample Sizes (mean ± std, seconds)}
+\label{tab:detailed_time_comparison_sample_size}
+\begin{tabular}{lccccc}
+\toprule
+Method & \multicolumn{5}{c}{Sample Size $n$} \\
+\cmidrule{2-6}
+ & 100 & 500 & 1000 & 2000 & 5000 \\
+\midrule
+Stein & 0.034 ± 0.010 & 0.196 ± 0.008 & 0.191 ± 0.030 & 0.316 ± 0.001 & 0.803 ± 0.009 \\
+DFS (Ts=25) & 0.372 ± 0.003 & 0.525 ± 0.004 & 0.356 ± 0.004 & 0.506 ± 0.006 & 1.043 ± 0.005 \\
+DFS (Ts=40) & 0.280 ± 0.002 & 0.540 ± 0.009 & 0.393 ± 0.000 & 0.842 ± 0.066 & 1.649 ± 0.009 \\
+DFS (Ts=55) & 0.601 ± 0.023 & 0.388 ± 0.002 & 0.525 ± 0.002 & 1.074 ± 0.052 & 2.246 ± 0.004 \\
+LassoNet (λ=1.1) & 1.762 ± 0.000 & 2.836 ± 0.016 & 3.587 ± 0.068 & 5.002 ± 0.263 & 6.369 ± 0.035 \\
+LassoNet (λ=1.2) & 1.385 ± 0.020 & 2.307 ± 0.025 & 2.395 ± 0.016 & 3.618 ± 0.065 & 3.849 ± 0.076 \\
+LassoNet (λ=1.3) & 1.290 ± 0.007 & 1.984 ± 0.022 & 1.961 ± 0.026 & 2.787 ± 0.012 & 3.496 ± 0.112 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item Note: Experiment parameters are $d=200$, $k=5$, $s=5$, function type is cos2
+\item Each value is the mean and standard deviation of 2 experiments (excluding warmup)
+\item Each sample size has one warmup experiment before formal experiments to avoid cold start effects
+\end{tablenotes}
+\end{table}
