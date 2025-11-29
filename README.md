@@ -20,6 +20,7 @@ This repository implements the feature selection methodology proposed in the pap
 - NumPy
 - PyTorch
 - SciPy
+- lassonet
 
 ### Install Dependencies
 
@@ -44,8 +45,8 @@ pip install -r requirements.txt
 ### Run Low-Dimensional Experiments
 ```bash
 cd Sec7_1_low_dimension_experiments
-python dimension_compare.py
 python sample_compare.py
+python dimension_compare.py
 ```
 
 ### Run High-Dimensional Experiments
@@ -54,14 +55,13 @@ cd Sec7_2_high_dimension_experiments
 python dimension_compare.py
 python rho_compare.py
 python sample_compare.py
-python screening_compare.py
 ```
 
 ### Run Prediction Experiments
 ```bash
 cd Sec7_3_prediction_experiments
-python prediction.py
 python sample_compare.py
+python dimension_compare.py
 ```
 
 ### Run Time Comparison Experiments
