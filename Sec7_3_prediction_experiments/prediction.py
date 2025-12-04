@@ -610,10 +610,9 @@ class FeatureSelectionEvaluator:
         self.X_train, self.sigma = generate_samples(self.d, self.n_samples, iid=True)
         self.A1 = np.zeros((self.d, self.k))
         self.true_indices = np.random.choice(self.d, self.s, replace=False)
-        #self.A1[self.true_indices] = np.random.rand(self.s, self.k)
         self.A1[self.true_indices] = random_rotation_matrix(self.s)
 
-        self.func_params = np.random.rand(self.k, 1) + 2  # notice
+        self.func_params = (np.random.rand(self.k, 1) + 2) / 8  #
         self.y_train = func_choose(self.X_train, self.A1, self.k, self.func_type, self.func_params) 
         self.X_val, _ = generate_samples(self.d, self.val_samples, iid=True)
         self.y_val = func_choose(self.X_val, self.A1, self.k, self.func_type, self.func_params)

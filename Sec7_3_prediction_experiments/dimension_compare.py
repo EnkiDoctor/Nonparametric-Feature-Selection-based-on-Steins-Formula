@@ -797,7 +797,7 @@ def main():
         base_seed=1,
         n_experiments=99,  
         use_gpu=True,      
-        device_id=3,       
+        device_id=0,       
         n_samples=2000,    
         k=5,               
         s=5,               
