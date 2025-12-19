@@ -96,9 +96,8 @@ If you use this code in your research, please cite our paper:
 @article{du2025nonparametric,
   title={A Nonparametric Statistics Approach to Feature Selection in Deep Neural Networks with Theoretical Guarantees},
   author={Du, Junye and Li, Zhenghao and Gu, Zhutong and Feng, Long},
-  journal={},
-  year={2025},
-  publisher={Oxford University Press}
+  journal={arXiv preprint arXiv:2512.13565},
+  year={2025}
 }
 ```
 
