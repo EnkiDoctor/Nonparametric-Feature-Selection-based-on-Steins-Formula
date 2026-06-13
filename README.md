@@ -7,7 +7,7 @@ This repository implements the feature selection methodology proposed in the pap
 
 ## 📖 Paper Information
 
-**Authors**: Junye Du†, Zhenghao Li†, Zhutong Gu, Long Feng*  
+**Authors**: Junye Du†, Zhenghao Li†, Shuaida He, Long Feng*  
 **Affiliation**: Department of Statistics and Actuarial Science, University of Hong Kong  
 **Contact**: lfeng@hku.hk  
 † Equal contribution
@@ -44,35 +44,23 @@ pip install -r requirements.txt
 
 ### Run Low-Dimensional Experiments
 ```bash
-cd Sec7_1_low_dimension_experiments
+cd Sec5_1_low_dimension_experiments
 python sample_compare.py
 python dimension_compare.py
 ```
 
 ### Run High-Dimensional Experiments
 ```bash
-cd Sec7_2_high_dimension_experiments
+cd Sec5_2_high_dimension_experiments
 python dimension_compare.py
 python rho_compare.py
 python sample_compare.py
 ```
 
-### Run Prediction Experiments
-```bash
-cd Sec7_3_prediction_experiments
-python sample_compare.py
-python dimension_compare.py
-```
-
-### Run Time Comparison Experiments
-```bash
-cd Sec7_3_time_comparison
-python time_comparison_sample_size.py
-```
 
 ### Run t-Distribution Experiments
 ```bash
-cd Sec7_4_high_dimension_t_experiments
+cd Supp_high_dimension_t_experiments
 python dimension_compare_t.py
 ```
 
@@ -80,10 +68,9 @@ python dimension_compare_t.py
 
 Our method demonstrates superior performance in the following scenarios:
 
-1. **Low-Dimensional Setting** (Section 7.1)
-2. **High-Dimensional Setting** (Section 7.2)
-3. **Prediction Performance** (Section 7.3)
-4. **Non-Gaussian Distributions** (Section 7.4)
+1. **Low-Dimensional Setting** (Section 5.1)
+2. **High-Dimensional Setting** (Section 5.2)
+3. **Non-Gaussian Distributions** (Supplimentary Materials)
 
 For visualization results, please refer to our paper.
 
